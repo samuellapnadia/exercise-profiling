@@ -66,6 +66,6 @@ I faced some challenges i faced when conducting performance testing and profilin
 The benefits i gain from using IntelliJ Profiler for profiling my application code include getting detailed insight into execution time per method and having a real-time visualization.
 #### How do you handle situations where the results from profiling with IntelliJ Profiler are not entirely consistent with findings from performance testing using JMeter?
 One approach I did was doing a cross-checking for multiple runs by runningJMeter and Profiler tests multiple times to ensure results are stable. 
-#### Whatstrategiesdoyouimplementinoptimizingapplicationcodeafteranalyzingresults from performance testing and profiling? How do you ensure the changes you make do not affect the application's functionality?
+#### What strategies do you implement in optimizing application code after analyzing results from performance testing and profiling? How do you ensure the changes you make do not affect the application's functionality?
 Some strategies I implemented are using database query optimization, avoiding redundant loops, and using efficient data structures. To ensure the changes do not affect the application's functionality, I ran the unit and integration tests to verify that the optimizations do not introduce any errors/bugs and I also benchmark the performance before and after changes by comparing JMeter results to measure improvements.
 
