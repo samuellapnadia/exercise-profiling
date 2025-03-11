@@ -1,51 +1,26 @@
 # MODULE 5 
-## Performance Testing (using JMeter)
+## Optimization Results
 ### /all-student-name 
-![View Results Tree](screenshots/asn1.png)
-*View Results Tree.*
-![View Results in Table](screenshots/asn2.png)
-*View Results in Table.*
-![Summary Report](screenshots/asn3.png)
-*Summary Report.*
-![Graph Results](screenshots/asn4.png)
-*Graph Results.*
-
-### /highest-gpa
-![View Results Tree](screenshots/gpa1.png)
-*View Results Tree.*
-![View Results in Table](screenshots/gpa2.png)
-*View Results in Table.*
-![Summary Report](screenshots/gpa3.png)
-*Summary Report.*
-![Graph Results](screenshots/gpa4.png)
-*Graph Results.*
-
-### Command Line
-#### /all-student-name
+![Command Line /all-student-name](screenshots/asn2.png)
+*Before Optimization.*
+![Log File /all-student-name](screenshots/asnafter.png)
+*After Optimization.*
+#### Command Line
 ![Command Line /all-student-name](screenshots/asncl.png)
 *Command Line.*
 ![Log File /all-student-name](screenshots/asnlog.png)
 *Log File.*
 
-#### /highest-gpa
-![Command Line /highest-gpa](screenshots/gpacl.png)
-*Command Line.*
-![Log File /highest-gpa](screenshots/gpalog.png)
-*Log File.*
-
-## Profiling
-### Optimization Results
-#### /all-student-name 
-![Command Line /all-student-name](screenshots/asn2.png)
-*Before Optimization.*
-![Log File /all-student-name](screenshots/asnafter.png)
-*After Optimization.*
-
-#### /highest-gpa
+### /highest-gpa
 ![Command Line /highest-gpa](screenshots/gpa2.png)
 *Before Optimization.*
 ![Log File /highest-gpa](screenshots/gpaafter.png)
 *After Optimization.*
+#### Command Line
+![Command Line /highest-gpa](screenshots/gpacl.png)
+*Command Line.*
+![Log File /highest-gpa](screenshots/gpalog.png)
+*Log File.*
 
 ### Explanation
 Before optimization, the runtime for each thread request was significantly high, leading to long sample times for the /all-student-name and /highest-gpa endpoints.
