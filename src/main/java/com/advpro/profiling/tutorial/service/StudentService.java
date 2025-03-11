@@ -1,5 +1,5 @@
 package com.advpro.profiling.tutorial.service;
-
+import java.util.stream.Collectors;
 import com.advpro.profiling.tutorial.model.Student;
 import com.advpro.profiling.tutorial.model.StudentCourse;
 import com.advpro.profiling.tutorial.repository.StudentCourseRepository;
@@ -41,11 +41,9 @@ public class StudentService {
     }
 
     public String joinStudentNames() {
-        List<Student> students = studentRepository.findAll();
-        String result = "";
-        for (Student student : students) {
-            result += student.getName() + ", ";
-        }
-        return result.substring(0, result.length() - 2);
+        return studentRepository.findAll().stream()
+                .map(Student::getName)
+                .collect(Collectors.joining(", "));
     }
+
 }
